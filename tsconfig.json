@@ -17,6 +17,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@pegasusheavy/ngx-bun": ["./src/index.ts"],
       "@pegasusheavy/ngx-bun/*": ["./src/*"]

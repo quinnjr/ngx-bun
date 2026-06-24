@@ -3,6 +3,7 @@
     "target": "ES2022",
     "module": "CommonJS",
     "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "lib": ["ES2022"],
     "declaration": true,
     "sourceMap": true,
@@ -13,6 +14,7 @@
     "resolveJsonModule": true,
     "outDir": "./builders",
     "rootDir": "./builders-src",
+    "types": ["node"],
     "baseUrl": ".",
     "paths": {
       "@pegasusheavy/ngx-bun": ["./dist/index"],

@@ -122,7 +122,7 @@ async function* execute(
       } else {
         yield {
           success: false,
-          error: 'Server file not found. Run `ng add @pegasusheavy/ngx-bun` to generate one.'
+          error: 'Server file not found. Run `ng add ngx-bun` to generate one.'
         } as BuilderOutput;
         continue;
       }

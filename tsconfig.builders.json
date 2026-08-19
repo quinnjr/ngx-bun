@@ -17,8 +17,8 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@pegasusheavy/ngx-bun": ["./dist/index"],
-      "@pegasusheavy/ngx-bun/*": ["./dist/*"]
+      "ngx-bun": ["./dist/index"],
+      "ngx-bun/*": ["./dist/*"]
     }
   },
   "include": ["builders-src/**/*"],

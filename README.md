@@ -1,4 +1,4 @@
-# @pegasusheavy/ngx-bun
+# ngx-bun
 
 <div align="center">
   <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="80" alt="Angular" />
@@ -47,7 +47,7 @@
 ### Using Angular CLI (Recommended)
 
 ```bash
-ng add @pegasusheavy/ngx-bun
+ng add ngx-bun
 ```
 
 This will:
@@ -61,7 +61,7 @@ This will:
 
 ```bash
 # Install the package
-pnpm add @pegasusheavy/ngx-bun
+pnpm add ngx-bun
 
 # Install peer dependencies
 pnpm add @angular/ssr @angular/platform-server
@@ -72,7 +72,7 @@ pnpm add @angular/ssr @angular/platform-server
 ### 1. Add SSR to your Angular project
 
 ```bash
-ng add @pegasusheavy/ngx-bun
+ng add ngx-bun
 ```
 
 ### 2. Start the development server
@@ -100,7 +100,7 @@ pnpm serve:ssr
 The generated `server.ts` file can be customized:
 
 ```typescript
-import { createBunServer, createBunAngularEngine } from '@pegasusheavy/ngx-bun';
+import { createBunServer, createBunAngularEngine } from 'ngx-bun';
 
 const engine = createBunAngularEngine({
   bootstrap: () => import('./src/main.server'),
@@ -155,14 +155,14 @@ The schematic adds these targets to your `angular.json`:
 ```json
 {
   "serve-ssr": {
-    "builder": "@pegasusheavy/ngx-bun:serve",
+    "builder": "ngx-bun:serve",
     "options": {
       "browserTarget": "my-app:build",
       "port": 4000
     }
   },
   "prerender": {
-    "builder": "@pegasusheavy/ngx-bun:prerender",
+    "builder": "ngx-bun:prerender",
     "options": {
       "browserTarget": "my-app:build:production",
       "routes": ["/", "/about", "/contact"]
@@ -248,7 +248,7 @@ interface BunServerOptions {
 Creates a request handler for custom server setups.
 
 ```typescript
-import { createRequestHandler } from '@pegasusheavy/ngx-bun';
+import { createRequestHandler } from 'ngx-bun';
 
 const handler = createRequestHandler({
   engine,
@@ -297,7 +297,7 @@ ng run my-app:prerender
 ### Programmatic API
 
 ```typescript
-import { prerenderRoutes } from '@pegasusheavy/ngx-bun/prerender';
+import { prerenderRoutes } from 'ngx-bun/prerender';
 
 const result = await prerenderRoutes({
   engineOptions: {
@@ -357,7 +357,7 @@ const result = await prerenderRoutes({
 
 ## Comparison with Express-based SSR
 
-| Feature | @pegasusheavy/ngx-bun | Express SSR |
+| Feature | ngx-bun | Express SSR |
 |---------|-------------------|-------------|
 | Cold Start | ~50ms | ~200ms |
 | Memory Usage | Lower | Higher |
@@ -415,13 +415,13 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 ## License
 
-MIT © [Pegasus Heavy Industries](https://github.com/pegasusheavy)
+MIT © [Joseph R. Quinn](https://github.com/quinnjr)
 
 ## Support
 
-- 📖 [Documentation](https://github.com/pegasusheavy/ngx-bun#readme)
-- 🐛 [Issue Tracker](https://github.com/pegasusheavy/ngx-bun/issues)
-- 💬 [Discussions](https://github.com/pegasusheavy/ngx-bun/discussions)
+- 📖 [Documentation](https://github.com/quinnjr/ngx-bun#readme)
+- 🐛 [Issue Tracker](https://github.com/quinnjr/ngx-bun/issues)
+- 💬 [Discussions](https://github.com/quinnjr/ngx-bun/discussions)
 
 ---
 

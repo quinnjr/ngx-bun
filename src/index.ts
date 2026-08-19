@@ -1,5 +1,5 @@
 /**
- * @pegasusheavy/ngx-bun - Bun SSR/SSG adapter for Angular 19+
+ * ngx-bun - Bun SSR/SSG adapter for Angular 19+
  *
  * This package provides a high-performance server adapter for Angular applications
  * using Bun's built-in HTTP server.

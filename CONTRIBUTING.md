@@ -1,6 +1,6 @@
-# Contributing to @pegasusheavy/ngx-bun
+# Contributing to ngx-bun
 
-Thank you for your interest in contributing to @pegasusheavy/ngx-bun! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to ngx-bun! This document provides guidelines and information for contributors.
 
 ## Development Setup
 
@@ -94,7 +94,7 @@ chore: update dependencies
 
 When reporting issues, please include:
 
-- Version of @pegasusheavy/ngx-bun
+- Version of ngx-bun
 - Angular version
 - Bun version
 - Node.js version

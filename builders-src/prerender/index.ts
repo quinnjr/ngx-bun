@@ -77,7 +77,7 @@ async function execute(
 
   try {
     // Import the prerender function dynamically from the package
-    const prerenderModule = await import('@pegasusheavy/ngx-bun/prerender');
+    const prerenderModule = await import('ngx-bun/prerender');
     const { prerenderRoutes } = prerenderModule;
 
     // Find the server bootstrap

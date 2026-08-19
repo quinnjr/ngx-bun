@@ -18,7 +18,7 @@ body:
       options:
         - label: I have searched existing issues to ensure this bug hasn't been reported
           required: true
-        - label: I have read the [documentation](https://github.com/pegasusheavy/ngx-bun#readme)
+        - label: I have read the [documentation](https://github.com/quinnjr/ngx-bun#readme)
           required: true
         - label: I am using a supported version of Angular (19+) and Bun (1.0+)
           required: true
@@ -39,7 +39,7 @@ body:
       description: Steps to reproduce the behavior
       placeholder: |
         1. Create a new Angular project with `ng new my-app`
-        2. Run `ng add @pegasusheavy/ngx-bun`
+        2. Run `ng add ngx-bun`
         3. Start the server with `npm run dev:ssr`
         4. See error...
     validations:
@@ -77,7 +77,7 @@ body:
   - type: input
     id: ngx-bun-version
     attributes:
-      label: "@pegasusheavy/ngx-bun Version"
+      label: "ngx-bun Version"
       placeholder: "0.1.0"
     validations:
       required: true

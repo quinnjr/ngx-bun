@@ -18,7 +18,7 @@ We take security seriously. If you discover a security vulnerability, please fol
 
 ### Do
 
-1. **Email us directly** at pegasusheavyindustries@gmail.com with:
+1. **Email us directly** at quinn.josephr@protonmail.com with:
    - A description of the vulnerability
    - Steps to reproduce the issue
    - Potential impact assessment
@@ -35,7 +35,7 @@ We take security seriously. If you discover a security vulnerability, please fol
 
 ## Security Best Practices
 
-When using `@pegasusheavy/ngx-bun`:
+When using `ngx-bun`:
 
 ### Server Configuration
 

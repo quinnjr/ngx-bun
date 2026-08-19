@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 Discussions
-    url: https://github.com/pegasusheavy/ngx-bun/discussions
+    url: https://github.com/quinnjr/ngx-bun/discussions
     about: Ask questions and discuss with the community
   - name: 📖 Documentation
-    url: https://github.com/pegasusheavy/ngx-bun#readme
+    url: https://github.com/quinnjr/ngx-bun#readme
     about: Check the documentation for answers
   - name: 🔍 Stack Overflow
     url: https://stackoverflow.com/questions/tagged/angular-ssr

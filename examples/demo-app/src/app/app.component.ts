@@ -7,7 +7,7 @@ import { isPlatformBrowser, isPlatformServer } from '@angular/common';
   template: `
     <div class="container">
       <header>
-        <h1>🚀 &#64;pegasusheavy/ngx-bun Demo</h1>
+        <h1>🚀 &#64;ngx-bun Demo</h1>
         <p class="subtitle">Angular 19 + Bun SSR</p>
       </header>
 
@@ -55,7 +55,7 @@ import { isPlatformBrowser, isPlatformServer } from '@angular/common';
       </main>
 
       <footer>
-        <p>Built with ❤️ by <a href="https://github.com/pegasusheavy">Pegasus Heavy Industries</a></p>
+        <p>Built with ❤️ by <a href="https://github.com/quinnjr">Joseph R. Quinn</a></p>
       </footer>
 
     </div>

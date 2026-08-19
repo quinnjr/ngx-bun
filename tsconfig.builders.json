@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "Node16",
+    "moduleResolution": "node16",
     "ignoreDeprecations": "6.0",
     "lib": ["ES2022"],
     "declaration": true,
@@ -15,7 +15,6 @@
     "outDir": "./builders",
     "rootDir": "./builders-src",
     "types": ["node"],
-    "baseUrl": ".",
     "paths": {
       "ngx-bun": ["./dist/index"],
       "ngx-bun/*": ["./dist/*"]

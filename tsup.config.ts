@@ -8,7 +8,14 @@ export default defineConfig([
       'prerender/index': 'src/prerender/index.ts',
     },
     format: ['cjs', 'esm'],
-    dts: true,
+    // Declarations are emitted separately via `tsc -p tsconfig.build.json`
+    // (see the "build" script). tsup's dts bundling goes through
+    // rollup-plugin-dts, which crashes under TypeScript 7
+    // ("Cannot read properties of undefined (reading
+    // 'useCaseSensitiveFileNames')") because it wasn't built against the
+    // TS7 compiler API. Plain `tsc` declaration-only emission has no such
+    // dependency on rollup-plugin-dts and works fine with TS7.
+    dts: false,
     sourcemap: true,
     clean: true,
     outDir: 'dist',

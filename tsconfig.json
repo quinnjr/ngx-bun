@@ -16,7 +16,6 @@
     "noEmit": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": ".",
     "ignoreDeprecations": "6.0",
     "paths": {
       "ngx-bun": ["./src/index.ts"],

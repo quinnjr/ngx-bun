@@ -127,7 +127,7 @@ jobs:
           npm version ${{ needs.validate.outputs.version }} --no-git-tag-version --allow-same-version
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
+        run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -170,18 +170,18 @@ jobs:
             ## Installation
 
             ```bash
-            ng add @pegasusheavy/ngx-bun
+            ng add ngx-bun
             ```
 
             Or manually:
 
             ```bash
-            npm install @pegasusheavy/ngx-bun
+            npm install ngx-bun
             ```
 
             ## Documentation
 
-            See the [README](https://github.com/pegasusheavy/ngx-bun#readme) for full documentation.
+            See the [README](https://github.com/quinnjr/ngx-bun#readme) for full documentation.
           draft: false
           prerelease: ${{ inputs.prerelease || false }}
           generate_release_notes: true

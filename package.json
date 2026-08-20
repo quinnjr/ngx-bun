@@ -1,5 +1,5 @@
 {
-  "name": "@pegasusheavy/ngx-bun",
+  "name": "ngx-bun",
   "version": "0.1.0",
   "description": "Bun SSR/SSG adapter for Angular 19+ applications",
   "keywords": [
@@ -13,18 +13,15 @@
     "angular-19",
     "angular-universal"
   ],
-  "author": "Pegasus Heavy Industries",
+  "author": "Joseph R. Quinn",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pegasusheavy/ngx-bun.git"
+    "url": "git+https://github.com/quinnjr/ngx-bun.git"
   },
-  "homepage": "https://github.com/pegasusheavy/ngx-bun#readme",
+  "homepage": "https://github.com/quinnjr/ngx-bun#readme",
   "bugs": {
-    "url": "https://github.com/pegasusheavy/ngx-bun/issues"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "https://github.com/quinnjr/ngx-bun/issues"
   },
   "files": [
     "dist",
@@ -59,7 +56,7 @@
   },
   "builders": "./builders/builders.json",
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc -p tsconfig.build.json",
     "build:schematics": "tsc -p tsconfig.schematics.json && cp -r schematics-src/server/files schematics/server/",
     "build:builders": "tsc -p tsconfig.builders.json",
     "build:all": "bun run build && bun run build:schematics && bun run build:builders",

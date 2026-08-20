@@ -159,5 +159,5 @@ jobs:
       - name: Verify package can be imported
         run: |
           cd /tmp/test-app
-          echo "import '@pegasusheavy/ngx-bun';" > test-import.mjs
+          echo "import 'ngx-bun';" > test-import.mjs
           node --experimental-vm-modules test-import.mjs || echo "Import test completed"

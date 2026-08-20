@@ -93,7 +93,7 @@ function updateAngularJson(options: Schema): Rule {
     // Add server target if it doesn't exist
     if (!project.targets.has('serve-ssr')) {
       project.targets.set('serve-ssr', {
-        builder: '@pegasusheavy/ngx-bun:serve',
+        builder: 'ngx-bun:serve',
         options: {
           browserTarget: `${projectName}:build`,
           port: options.port,
@@ -113,7 +113,7 @@ function updateAngularJson(options: Schema): Rule {
     // Add prerender target
     if (!project.targets.has('prerender')) {
       project.targets.set('prerender', {
-        builder: '@pegasusheavy/ngx-bun:prerender',
+        builder: 'ngx-bun:prerender',
         options: {
           browserTarget: `${projectName}:build:production`,
           routes: ['/'],
@@ -184,7 +184,7 @@ export function ngAdd(options: Schema): Rule {
       );
     }
 
-    context.logger.info(`\n🚀 Adding @pegasusheavy/ngx-bun to project "${options.project}"...\n`);
+    context.logger.info(`\n🚀 Adding ngx-bun to project "${options.project}"...\n`);
 
     return chain([
       addDependencies(options),
@@ -197,7 +197,7 @@ export function ngAdd(options: Schema): Rule {
       updatePackageJsonScripts(options),
       installPackages(options),
       (tree: Tree, context: SchematicContext) => {
-        context.logger.info('\n✨ @pegasusheavy/ngx-bun has been added to your project!\n');
+        context.logger.info('\n✨ ngx-bun has been added to your project!\n');
         context.logger.info('Available commands:');
         context.logger.info('  • npm run dev:ssr     - Start development server with SSR');
         context.logger.info('  • npm run build:ssr   - Build for production');

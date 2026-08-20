@@ -18,7 +18,7 @@ body:
       options:
         - label: I have searched existing issues to ensure this feature hasn't been requested
           required: true
-        - label: I have read the [documentation](https://github.com/pegasusheavy/ngx-bun#readme)
+        - label: I have read the [documentation](https://github.com/quinnjr/ngx-bun#readme)
           required: true
 
   - type: dropdown
